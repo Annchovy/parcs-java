@@ -22,7 +22,6 @@ public class Main{
                 names = names + " " + subnames.get(j);
             }
             array_names.add(names);
-            System.out.println(names);
         }
         point p1 = info.createPoint();
         channel c1 = p1.createChannel();
