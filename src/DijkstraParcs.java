@@ -8,6 +8,7 @@ public class DijkstraParcs implements AM {
         Graph graph = (Graph) info.parent.readObject();
         String nodes;
         nodes = (String) info.parent.readObject();
+        System.out.println(nodes);
         String[] splited = nodes.split(" ");
         for (String name : splited) {
             try {
