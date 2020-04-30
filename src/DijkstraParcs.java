@@ -8,7 +8,7 @@ import java.util.List;
 public class DijkstraParcs implements AM {
     public void run(AMInfo info) {
         Graph graph = (Graph) info.parent.readObject();
-        List<String> names = (List<String>) info.parent.readObject();
+        ArrayList<String> names = (ArrayList<String>) info.parent.readObject();
         System.out.println(names);
         String result = "";
         try {

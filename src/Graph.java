@@ -5,7 +5,7 @@ public class Graph implements Serializable{
 
     public HashMap<String, Node> hashNodes = new HashMap<>();
     public Set<Node> nodes = new HashSet<>();
-    public List<String> names = new ArrayList<>();
+    public ArrayList<String> names = new ArrayList<>();
 
     public Graph(String fileName)throws IOException{
         BufferedReader reader;

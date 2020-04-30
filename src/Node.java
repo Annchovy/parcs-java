@@ -8,7 +8,7 @@ public class Node implements Serializable {
 
     private String name;
 
-    private List<Node> shortestPath = new LinkedList<>();
+    private LinkedList<Node> shortestPath = new LinkedList<>();
 
     private Integer distance = Integer.MAX_VALUE;
 
@@ -38,7 +38,7 @@ public class Node implements Serializable {
         this.distance = newDistance;
     }
 
-    public void setShortestPath(List<Node> newShortestPath) {
+    public void setShortestPath(LinkedList<Node> newShortestPath) {
         this.shortestPath = newShortestPath;
     }
 
