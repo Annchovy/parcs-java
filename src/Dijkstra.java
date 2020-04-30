@@ -7,7 +7,6 @@ import java.util.Set;
 public class Dijkstra implements Serializable {
     public static Graph calculateShortestPathFromSource(Graph graph, Node source) {
         source.setDistance(0);
-
         Set<Node> settledNodes = new HashSet<>();
         Set<Node> unsettledNodes = new HashSet<>();
 
