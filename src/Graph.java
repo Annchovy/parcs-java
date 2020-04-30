@@ -48,7 +48,12 @@ public class Graph implements Serializable{
             throws IOException {
         String result = "";
         for (Node node : nodes) {
-            String str = "From " + nodeStart.getName() + " to " + node.getName() + " is " + node.getDistance().toString() + "\n";
+            Integer distance = node.getDistance();
+            String print_distance = " is " + distance.toString();
+            if (distance == Integer.MAX_VALUE){
+                print_distance = " path doesn't exist ";
+            }
+            String str = "From " + nodeStart.getName() + " to " + node.getName() + print_distance + "\n";
             result = result + str;
         }
         return result;
